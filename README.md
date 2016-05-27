@@ -1,26 +1,16 @@
 # Ember-cli-doorbell
 
-This README outlines the details of collaborating on this Ember addon.
+Injects doorbell into Ember CLI app.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+1. `ember install ember-cli-doorbell`
+2. Add Doorbell api key to `config/environment.js` for the environment that Doorbell should run in.
 
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
+```
+if (environment === 'production') {
+  ENV.APP.DOORBELL_APIKEY = <yourApiKeyHere>;
+}
+```
 
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
