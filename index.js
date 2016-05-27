@@ -6,7 +6,7 @@ module.exports = {
   contentFor: function(type, config) {
     var apiKey = config.APP.DOORBELL_APIKEY
 
-    if (apiKey && type === 'body') {
+    if (apiKey && type === 'body-footer') {
       return '<script type="text/javascript">' +
         'window.doorbellOptions = { appKey: apiKey };' +
         '(function(w, d, t) {' +
