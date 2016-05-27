@@ -8,7 +8,7 @@ module.exports = {
 
     if (apiKey && type === 'body-footer') {
       return '<script type="text/javascript">' +
-        'window.doorbellOptions = { appKey: apiKey };' +
+        'window.doorbellOptions = { appKey: ' + apiKey + ' };' +
         '(function(w, d, t) {' +
         ' function l() { window.doorbellOptions.windowLoaded = true;' +
         ' var g = d.createElement(t);g.id = \'doorbellScript\';g.type = \'text/javascript\';' +
