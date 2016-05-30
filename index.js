@@ -18,7 +18,7 @@ module.exports = {
             g.type = 'text/javascript'
             g.async = true
             g.src = 'https://embed.doorbell.io/button/3744?t=' + (new Date().getTime())
-            (d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g)
+            ;(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(g)
           }
           if (w.attachEvent) {
             w.attachEvent('onload', l)
