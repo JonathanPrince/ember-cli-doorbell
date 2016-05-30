@@ -10,7 +10,7 @@ module.exports = {
       return `
       <script type="text/javascript">
         window.doorbellOptions = { appKey: '${apiKey}' }
-        (function(w, d, t) {
+        ;(function(w, d, t) {
           function l() {
             window.doorbellOptions.windowLoaded = true
             var g = d.createElement(t)
