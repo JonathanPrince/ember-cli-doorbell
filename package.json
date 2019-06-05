@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-doorbell",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Adds Doorbell.io script to Ember CLI app.",
   "keywords": [
     "ember-addon",
