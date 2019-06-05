@@ -1,9 +1,8 @@
-/* jshint node: true */
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-doorbell',
-  contentFor: function(type, config) {
+  name: require('./package').name,
+  contentFor: function (type, config) {
     var apiKey = config.APP.DOORBELL_APIKEY
 
     if (apiKey && type === 'body-footer') {
